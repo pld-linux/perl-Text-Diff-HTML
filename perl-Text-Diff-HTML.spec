@@ -6,6 +6,7 @@
 %define		pdir	Text
 %define		pnam	Diff-HTML
 Summary:	XHTML format for Text::Diff::Unified
+Summary(pl):	Format XHTML dla Text::Diff::Unified
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.04
 Release:	0.1
@@ -23,10 +24,11 @@ BuildRequires:	perl-Test-Pod >= 1.20
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_noautoreq	'perl(anything_fake_or_conditional)'
-
 %description
 XHTML format for Text::Diff::Unified.
+
+%description -l pl
+Format XHTML dla Text::Diff::Unified.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
