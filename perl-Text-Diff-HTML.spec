@@ -7,13 +7,13 @@
 %define		pnam	Diff-HTML
 Summary:	XHTML format for Text::Diff::Unified
 Summary(pl):	Format XHTML dla Text::Diff::Unified
-Name:		perl-%{pdir}-%{pnam}
+Name:		perl-Text-Diff-HTML
 Version:	0.04
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Text/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	cd8a50dd2f9d90be1f949906441035c1
 URL:		http://search.cpan.org/~dwheeler/Text-Diff-HTML-0.04/
 BuildRequires:	perl-devel >= 1:5.8.0
