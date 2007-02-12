@@ -6,7 +6,7 @@
 %define		pdir	Text
 %define		pnam	Diff-HTML
 Summary:	XHTML format for Text::Diff::Unified
-Summary(pl):	Format XHTML dla Text::Diff::Unified
+Summary(pl.UTF-8):   Format XHTML dla Text::Diff::Unified
 Name:		perl-Text-Diff-HTML
 Version:	0.04
 Release:	1
@@ -27,7 +27,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 XHTML format for Text::Diff::Unified.
 
-%description -l pl
+%description -l pl.UTF-8
 Format XHTML dla Text::Diff::Unified.
 
 %prep
