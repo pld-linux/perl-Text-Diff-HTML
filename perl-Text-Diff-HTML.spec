@@ -8,13 +8,13 @@
 Summary:	XHTML format for Text::Diff::Unified
 Summary(pl.UTF-8):	Format XHTML dla Text::Diff::Unified
 Name:		perl-Text-Diff-HTML
-Version:	0.06
+Version:	0.07
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Text/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	27d6447eebebcfb620977aba8a9b9300
+# Source0-md5:	bea80ec02d4f6d7e8eb8cfbcb35f3b2c
 URL:		http://search.cpan.org/~dwheeler/Text-Diff-HTML-0.04/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -44,16 +44,14 @@ Format XHTML dla Text::Diff::Unified.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT{%{perl_vendorlib}/Text/Diff,%{_mandir}/man3}
-
-install lib/Text/Diff/HTML.pm $RPM_BUILD_ROOT%{perl_vendorlib}/Text/Diff
-install blib/libdoc/Text::Diff::HTML.3pm $RPM_BUILD_ROOT%{_mandir}/man3 
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README
+%doc Changes README.md
 %{perl_vendorlib}/Text/Diff/HTML.pm
 %{_mandir}/man3/*
