@@ -7,13 +7,13 @@
 Summary:	XHTML format for Text::Diff::Unified
 Summary(pl.UTF-8):	Format XHTML dla Text::Diff::Unified
 Name:		perl-Text-Diff-HTML
-Version:	0.07
-Release:	2
+Version:	0.08
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Text/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	bea80ec02d4f6d7e8eb8cfbcb35f3b2c
+Source0:	https://www.cpan.org/modules/by-authors/id/T/TI/TIMK/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	b470d017958a3541cda9b1c4f8b2219e
 URL:		http://search.cpan.org/~dwheeler/Text-Diff-HTML-0.04/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
